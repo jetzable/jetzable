@@ -1,65 +1,54 @@
 <template>
-  <z-view class="main-background">
+  <z-view class="main-background" >
     <div slot="extension">
       <!-- about me-->
       <z-spot
-        style="background-color: orange; border-width: 4px; border-color: var(--background-color);"
-        :angle="-145"
+
+        :angle="-160"
         size="xl"
-        :distance="170"
+        :distance="180"
         to-view="aboutMe">
-        <i style="color: var( --accent-text-color)" class="fas fa-user-alt"></i><br>
-        <span style="color: var( --accent-text-color)">About Me</span>
+        <img class="profile-img" src="../assets/profileAbout.jpg" alt="Palmidia Garay Javascript Developer">
       </z-spot>
       <!-- projects-->
       <z-spot
-        :angle="-30"
+        :angle="-50"
         size="l"
-        :distance="160"
-        label-pos="top"
+        :distance="150"
+        label-pos="bottom"
         to-view="projects">
         <p>
-Projects
-        <i class="fas fa-th-list"></i>
+        <i class="fas fa-th-list"><p>Projects</p></i>
         </p>
       </z-spot>
       <!-- Linkedn-->
       <z-spot
-        :angle="0"
+        :angle="-10"
         size="m"
-        :distance="140"
-        label-pos="right"
-        to-view="linkedn">
-        <i class="fab fa-linkedin-in"></i>
+        :distance="138">
+            <a href="https://www.linkedin.com/in/jetzable/" target="_blank">       
+             <i class="fab fa-linkedin-in"></i>
+             </a>
       </z-spot>
-      <!-- rooms-->
+            <!-- GitHub-->
       <z-spot
-        :angle="30"
-        size="s"
-        :distance="120"
-        label="Rooms"
-        label-pos="right"
-        to-view="rooms">
-        5
+        :angle="20"
+        size="m"
+        :distance="135">
+            <a href="https://github.com/jetzable" target="_blank">       
+             <i class="fab fa-github"></i>
+             </a>
       </z-spot>
-      <!-- devices-->
+      
+      <!-- cv-->
       <z-spot
+      label="CV"
+      label-pos="bottom"
         :angle="60"
-        :distance="120"
+        :distance="130"
         size="s"
-        label="Devices"
-        label-pos="right"
         to-view="devices">
-        45
-      </z-spot>
-      <!-- settings-->
-      <z-spot
-        :angle="150"
-        :distance="120"
-        size="s"
-        label="Settings"
-        to-view="settings">
-        <i class="fas fa-sliders-h"></i>
+        <i class="far fa-file-alt"></i>
       </z-spot>
     </div>
   </z-view>
@@ -71,4 +60,13 @@ Projects
     width: 100%;
     background-size: contain
 }
+a, i, span, h1{
+  color: azure
+}
+
+.profile-img{
+  width: 100%;
+  border-radius: 50%
+}
+
 </style>

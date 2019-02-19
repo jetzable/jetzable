@@ -13,6 +13,6 @@ export default {
 }
 </script>
 <style>
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+@import url('https://fonts.googleapis.com/css?family=Nova+Slim');
 @import url('https://use.fontawesome.com/releases/v5.1.0/css/all.css');
 </style>
